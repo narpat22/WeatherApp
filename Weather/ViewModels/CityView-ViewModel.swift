@@ -84,11 +84,7 @@ final class CityViewViewModel: ObservableObject {
     
     ///get location for a certain place
     private func getLocation() {
-//        CLGeocoder().geocodeAddressString(city) { (placemarks, error) in
-//            if let places = placemarks, let place = places.first {
-//                self.getWeather(coord: place.location?.coordinate)
-//            }
-//        }
+        weather = WeatherResponse.empty()
     }
     
     ///function to get the lat and lot for the address

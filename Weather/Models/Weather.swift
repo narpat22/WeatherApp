@@ -40,13 +40,14 @@ struct Weather: Codable, Identifiable {
         temp = Double.random(in: 0...30)
         feels_like = 306.18
         pressure = 1011
-        humidity = 86
-        dew_point = 40
+        humidity = Int.random(in: 60...95)
+        dew_point = Double.random(in: 10...30)
         clouds = 40
-        wind_speed = 12.78
+        wind_speed = Double.random(in: 10...30)
         wind_deg = 360
-//        weather = [WeatherDetail(main: "Clear", description: "clear sky", icon: "11d")]
-        weather = []
+        weather = [WeatherDetail(main: "Clear",
+                                 description: "clear sky",
+                                 icon: Icons.allCases[Int.random(in: 0..<Icons.allCases.count)].rawValue)]
     }
 }
 

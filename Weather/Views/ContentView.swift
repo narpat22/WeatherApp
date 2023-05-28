@@ -14,9 +14,7 @@ struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var animateGradient = false
     let blueGradient = Gradient(colors: [Color("Blue"), Color("SeaBlue"), Color("Purple")])
-    
-//    let sunnyGradient = Gradient(colors: [Color("sunflowerYellow"), Color("RadiantYellow"), Color("Orange")])
-    
+
     var body: some View {
         ZStack {
             LinearGradient(gradient: blueGradient, startPoint: .topTrailing, endPoint: .bottomLeading)
