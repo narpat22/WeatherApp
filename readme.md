@@ -17,6 +17,6 @@ Stylish weather app made with SwiftUI. The data is provided by [OpenWeatherAPI](
 2. Instances of hourly and daily forecasts are **created dynamically** using **view-building methods** that return `some View`.  
 3. To display Lottie animation according to the fetched weather, I made a `func` with a `switch` statement that reads the weather condition code and returns a name of the Lottie Animation. Same has been done with SF Symbols.
 # Example
-![](/weather1.gif)
-![](/weather2.gif)
+![](https://github.com/narpat22/WeatherApp/blob/main/WeatherApp/weather1.gif)
+![](https://github.com/narpat22/WeatherApp/blob/main/WeatherApp/weather2.gif)
 
